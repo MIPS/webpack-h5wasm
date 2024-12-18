@@ -1,12 +1,19 @@
 {
-  "type": "module",
+  "type": "commonjs",
   "module": "NodeNext",
   "target": "es2022",
   "devDependencies": {
     "@types/fs-extra": "^11.0.4",
-    "typescript": "^5.7.2"
+    "rimraf": "^6.0.1",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.7.2",
+    "webpack-cli": "^5.1.4"
   },
   "dependencies": {
-    "h5wasm": "^0.7.8"
+    "h5wasm": "^0.7.8",
+    "webpack": "^5.97.1"
+  },
+  "scripts": {
+    "build": "rimraf dist && npx webpack --mode development"
   }
 }
