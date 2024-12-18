@@ -1,4 +1,5 @@
 async function main(file: string) {
+  // const h5wasm = await import(/* webpackMode: "eager" */ "h5wasm/node");
   const h5wasm = await import("h5wasm/node");
   await h5wasm.ready;
 
